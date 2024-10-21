@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Aprobar Vacaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Aprobar Vacaciones</h1>
+<form action="/vacaciones/aprobar" method="post">
+    <label for="gestorId">ID Gestor:</label>
+    <input type="text" id="gestorId" name="gestorId" required><br>
+
+    <label for="nombreGestor">Nombre Gestor:</label>
+    <input type="text" id="nombreGestor" name="nombreGestor" required><br>
+
+    <label for="vacacionesId">ID Solicitud de Vacaciones:</label>
+    <input type="text" id="vacacionesId" name="vacacionesId" required><br>
+
+    <label for="nivelAprobacion">Nivel de Aprobación (1 o 2):</label>
+    <input type="text" id="nivelAprobacion" name="nivelAprobacion" required><br><br>
+
+    <input type="submit" value="Aprobar Vacaciones">
+</form>
+</body>
+</html>

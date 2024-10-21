@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalles de Vacaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Detalles de la Solicitud de Vacaciones</h1>
+<p>ID Vacaciones: <span th:text="${vacaciones.id}"></span></p>
+<p>Empleado: <span th:text="${vacaciones.empleado.nombre}"></span></p>
+<p>Fecha Inicio: <span th:text="${vacaciones.fechaInicio}"></span></p>
+<p>Fecha Fin: <span th:text="${vacaciones.fechaFin}"></span></p>
+<p>Aprobación 1: <span th:text="${vacaciones.aprobacion1}"></span></p>
+<p>Aprobación 2: <span th:text="${vacaciones.aprobacion2}"></span></p>
+</body>
+</html>

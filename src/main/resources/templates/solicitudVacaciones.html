@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Solicitud de Vacaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Solicitud de Vacaciones</h1>
+<form action="/vacaciones/solicitar" method="post">
+    <label for="empleadoId">ID Empleado:</label>
+    <input type="text" id="empleadoId" name="empleadoId" required><br>
+
+    <label for="nombre">Nombre Empleado:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="fechaInicio">Fecha Inicio (YYYY-MM-DD):</label>
+    <input type="date" id="fechaInicio" name="fechaInicio" required><br><br>
+
+    <input type="submit" value="Solicitar Vacaciones">
+</form>
+</body>
+</html>
